@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eduardo Andrade TST</title>
+<meta name="description" content="Cartão de visita digital de Eduardo Andrade TST">
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;color:#171717;display:flex;justify-content:center;padding:28px 16px}.card{width:100%;max-width:430px;background:#fff;border-radius:28px;padding:30px 22px 24px;box-shadow:0 12px 40px rgba(0,0,0,.12);text-align:center}.logo{width:116px;height:116px;object-fit:contain;border-radius:24px;margin:0 auto 18px;display:block}.name{font-size:27px;font-weight:800;margin:0}.role{font-size:16px;color:#666;margin:7px 0 24px}.buttons{display:grid;gap:12px}.btn{display:flex;align-items:center;justify-content:center;min-height:54px;padding:14px 18px;border-radius:15px;text-decoration:none;font-weight:700;color:#171717;background:#f0f0f0;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-1px);background:#e7e7e7}.btn.primary{background:#171717;color:#fff}.btn span{margin-right:9px;font-size:19px}.footer{margin-top:24px;font-size:12px;color:#999}.share{cursor:pointer;border:0;width:100%;font:inherit}.contact{margin-top:12px} </style>
+</head>
+<body>
+<main class="card">
+  <img class="logo" src="logo.png" alt="Logo Eduardo Andrade TST">
+  <h1 class="name">Eduardo Andrade TST</h1>
+  <p class="role">Técnico em Segurança do Trabalho</p>
+  <div class="buttons">
+    <a class="btn primary" href="https://wa.me/5511940115806" target="_blank" rel="noopener"><span>💬</span>WhatsApp</a>
+    <a class="btn" href="https://www.instagram.com/eduardoandradetst/" target="_blank" rel="noopener"><span>📸</span>Instagram</a>
+    <a class="btn" href="https://br.linkedin.com/in/eduardo-a-m-de-andrade" target="_blank" rel="noopener"><span>💼</span>LinkedIn</a>
+    <button class="btn share" type="button" onclick="shareCard()"><span>↗</span>Compartilhar cartão</button>
+    <a class="btn contact" href="eduardo-andrade.vcf" download><span>📇</span>Salvar contato</a>
+  </div>
+  <div class="footer">Cartão digital • Eduardo Andrade TST</div>
+</main>
+<script>async function shareCard(){const data={title:'Eduardo Andrade TST',text:'Cartão de visita digital — Eduardo Andrade TST',url:location.href};if(navigator.share){try{await navigator.share(data)}catch(e){}}else{try{await navigator.clipboard.writeText(location.href);alert('Link copiado!')}catch(e){alert(location.href)}}}</script>
+</body>
+</html>
